@@ -244,7 +244,7 @@ nav.navbar.navbar-policy {
   padding: 16px;
   top: 25px;
   left: 10px;
-  width: 300px;
+  width: 317px;
   height: auto;
   box-shadow: 0 0 10px 0 #b35c1e;
 }
@@ -319,10 +319,10 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #503d10;
   background: linear-gradient(
     -45deg,
-    var(--Secondary-color),
-    var(--Primary-color),
-    var(--Secondary-color),
-    var(--Primary-color)
+    #FE9818,
+    #F6D417,
+    #FE9818,
+    #F6D417
   );
   background-size: 400% 400%;
   -webkit-animation: Gradient 3s ease infinite;
@@ -409,10 +409,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .animatedtext {
   background: linear-gradient(
     to right top,
-    var(--Secondary-color),
-    var(--Primary-color),
-    var(--Primary-color),
-    var(--Primary-color)
+    #FE9818,
+    #F6D417,
+    #FE9818,
+    #F6D417
   );
   background-size: 400% 200%;
 }
@@ -468,10 +468,10 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #b35c1e;
   background: linear-gradient(
     -45deg,
-    #ff9e54,
-    #E48137,
-    #d6702b,
-    #382b02
+    #FE9818,
+    #F6D417,
+    #FE9818,
+    #F6D417
   ) !important;
   background-size: 400% 400%;
   -webkit-animation:
@@ -743,7 +743,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: conic-gradient(
     from 40deg at 50% 50%,
     rgba(255, 255, 255, 0) 50%,
-    #d6702b 100%
+    #F6D417 100%
   );
   animation: rotateAndScaleAnimation 3s linear infinite;
 }
@@ -790,7 +790,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(195deg, #53d161, #23b73c);
+  background: linear-gradient(195deg, #FE9818, #F6D417);
 }
 .slide-submit-text {
   position: absolute;
@@ -1090,10 +1090,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 1.25rem;
   margin-left: 25px;
   content: "";
-  background-image: url(
-    data:image/svg + xml,
-    %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 16 16"fill="%23212529"%3e%3cpathfill-rule="evenodd"d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e
-  );
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
