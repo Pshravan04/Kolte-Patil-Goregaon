@@ -4,12 +4,15 @@
 <head>
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KCWR8MVB');</script>
-<!-- End Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KCWR8MVB');</script>
+    <!-- End Google Tag Manager -->
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
@@ -101,15 +104,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 
-    
+
 
 <body class="theme is-loading">
 
 
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCWR8MVB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCWR8MVB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
@@ -283,7 +286,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <h4 class="mb-0">Pre-Register here for Best Offers</h4>
                     </div>
                     <div class="form-section">
-                        <form class="text-center" name="Pre-Register" method="post" action="./submit.php">
+                        <form class="text-center" name="Pre-Register" method="POST" data-netlify="true"
+                            action="thankyou.html">
+                            <input type="hidden" name="form-name" value="Pre-Register" />
                             <input type="hidden" name="iso_code" value="" />
                             <input type="hidden" name="mobileExt" value="" />
                             <div class="form-group mb-3">
@@ -824,8 +829,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="col-lx-6 col-lg-6 col-sm-12 form-data">
                                         <div class="form">
                                             <h3 class="section-title">Schedule a Site Visit</h3>
-                                            <form class="text-center" name="schedule-site" method="post"
-                                                action="./submit.php">
+                                            <form class="text-center" name="schedule-site" method="POST"
+                                                data-netlify="true" action="thankyou.html">
+                                                <input type="hidden" name="form-name" value="schedule-site" />
                                                 <input type="hidden" name="iso_code" value="" />
                                                 <input type="hidden" name="mobileExt" value="" />
                                                 <div class="row">
@@ -873,8 +879,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             </span>
                                                         </label>
                                                     </div> -->
-                                                    <button id="schedule-site-visit-button" style="width: auto;"
-                                                        type="submit" name="submit"
+                                                    <button onclick="submitForm(event, 'schedule-site')"
+                                                        style="width: auto;" type="submit" name="submit"
                                                         class="btn ms-2 custom-btn btn-hover text-white data-id-btn"
                                                         data-id="Contact Site Visit">
                                                         <span class="enquireNowBtn">Submit</span>
@@ -1028,7 +1034,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="form-section p-3">
                 <h2 class="pb-2">Pre-Register here for Best Offers</h2>
-                <form class="text-center" name="Pre-Register-sidemodal" action="./submit.php" method="post">
+                <form class="text-center" name="Pre-Register-sidemodal" method="POST" data-netlify="true"
+                    action="thankyou.html">
+                    <input type="hidden" name="form-name" value="Pre-Register-sidemodal" />
                     <input type="hidden" name="iso_code" value="" />
                     <input type="hidden" name="mobileExt" value="" />
                     <div class="form-group mb-3"><input type="text" class="form-control" id="formGroupExampleInput"
@@ -1063,11 +1071,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </span>
                         </label>
                     </div> -->
-                    <button type="submit" id="right-panel-preregister-button"
+                    <button type="submit" id="right-panel-preregister-button-onrera"
+                        onclick="submitForm(event, 'Pre-Register-sidemodal')"
                         class="custom-btn btn btn-block mx-auto data-id-btn on-rera" data-id="Pre-Register">
                         <span class="enquireNowBtn">Pre-Register Now</span>
                     </button>
-                    <button type="submit" id="right-panel-preregister-button"
+                    <button type="submit" id="right-panel-preregister-button-nonrera"
+                        onclick="submitForm(event, 'Pre-Register-sidemodal')"
                         class="custom-btn btn btn-block mx-auto data-id-btn non-rera" data-id="Pre-Register">
                         <span class="enquireNowBtn">Express Your Interest</span>
                     </button>
@@ -1125,7 +1135,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             class="d-block mx-auto project-logo" style="width: 120px;" /></a>
                     <!--this content fetch from JS-->
 
-                    <form id="main-popup" name="modal-form" method="post" action="./submit.php">
+                    <form id="main-popup" name="modal-form" method="POST" data-netlify="true" action="thankyou.html">
+                        <input type="hidden" name="form-name" value="modal-form" />
                         <input type="hidden" name="iso_code" value="" />
                         <input type="hidden" name="mobileExt" value="" />
 
@@ -1177,8 +1188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </label>
                                 </div> -->
                                 <div class="text-center">
-                                    <button type="submit" name="Submit"
-                                        class="custom-btn btn btn-block mx-auto data-id-btn mx-auto mt-3 on-rera">
+                                    <button type="submit" name="Submit" onclick="submitForm(event, 'modal-form')">
                                         <span class="enquireNowBtn modal-btn">Enquire Now </span>
                                     </button>
                                     <button type="submit" name="Submit"
@@ -1211,7 +1221,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <h4 class="modal-title text-center mb-2">Enquire Now</h4>
                         <small class="mb-4 d-block">Register Here And Avail The Best Offers!!</small>
                     </div>
-                    <form name="modal-form1" method="post" action="./submit.php">
+                    <form name="modal-form1" method="POST" data-netlify="true" action="thankyou.html">
+                        <input type="hidden" name="form-name" value="modal-form1" />
                         <input type="hidden" name="iso_code" value="" />
                         <input type="hidden" name="mobileExt" value="" />
                         <div class="row">
@@ -1264,8 +1275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </label>
                                 </div> -->
                                 <div class="text-center">
-                                    <button type="submit" name="Submit"
-                                        class="custom-btn btn btn-block mx-auto data-id-btn mx-auto mt-3 on-rera">
+                                    <button type="submit" name="Submit" onclick="submitForm(event, 'modal-form1')">
                                         <span class="enquireNowBtn">Enquire Now </span>
                                     </button>
                                     <button type="submit" name="Submit"

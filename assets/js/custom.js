@@ -210,7 +210,8 @@ function submitForm(event, formName) {
         form_name: formnameValue,
         website_url: formData.get('website_url') ? formData.get('website_url') : window.location.origin,
         price: price,
-        currentUrl: currentUrl
+        currentUrl: currentUrl,
+        'form-name': formElement.getAttribute('name')
     };
 
     // --- Disable Submit Button ---
@@ -235,7 +236,7 @@ function submitForm(event, formName) {
     console.log("Sending AJAX request to send_esubmit.php with data:", form_data); // DEBUG
     $.ajax({
         type: 'POST',
-        url: 'send_esubmit.php',
+        url: '/',
         data: form_data,
         success: function (response) {
             console.log("AJAX Success Response:", response); // DEBUG
@@ -260,12 +261,11 @@ function submitForm(event, formName) {
             }
 
             if (formnameValue === 'Brochure') {
-                window.location.href = 'thank-you55d255d2.html?formName=Brochure';
-                //  window.location.href = 'thank-you.html';
+                window.location.href = 'thankyou.html?formName=Brochure';
             } else if (formnameValue === 'Sample-Flat') {
-                window.location.href = 'thank-you16da16da.html?formName=Sample-Flat';
+                window.location.href = 'thankyou.html?formName=Sample-Flat';
             } else {
-                window.location.href = 'thank-you.html';
+                window.location.href = 'thankyou.html';
             }
         },
         error: function (xhr, status, error) {
